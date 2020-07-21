@@ -1,0 +1,58 @@
+[{
+    "productName":"Mobiles",
+    "productCode":"1",
+    "available": 3,
+    "price": "20",
+    "rating": 2,
+    "img": "assets/images/mobile.png"
+},
+{
+    "productName":"Tables",
+    "productCode":"2",
+    "available": 2,
+    "price": "10",
+    "rating": 1,
+    "img": "assets/images/table.png"
+},
+{
+    "productName":"Bed",
+    "productCode":"3",
+    "available": 2,
+    "price": "10",
+    "rating": 3.5,
+    "img": "assets/images/table.png"
+},
+{
+    "productName":"Chair",
+    "productCode":"4",
+    "available": 2,
+    "price": "10",
+    "rating": 1,
+    "img": "assets/images/table.png"
+},
+{
+    "productName":"curdles",
+    "productCode":"5",
+    "available": 2,
+    "price": "10",
+    "rating": 1,
+    "img": "assets/images/table.png"
+},
+{
+    "productName":"AC",
+    "productCode":"6",
+    "available": 2,
+    "price": "10",
+    "rating": 1,
+    "img": "assets/images/table.png"
+},
+{
+    "productName":"Dress",
+    "productCode":"7",
+    "available": 2,
+    "price": "10",
+    "rating": 1,
+    "img": "assets/images/table.png"
+}
+
+]
