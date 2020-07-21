@@ -1,0 +1,36 @@
+<div class="p-product">
+<div class='card-header'>
+  <h1> {{pageTitle }} </h1>
+</div>
+<div>
+  <div>Filter</div> <input [(ngModel)]='filterString'  type="text">
+</div>
+<div *ngIf='filterString'>FilterBY: {{filterString}}  </div>
+<table *ngIf='products && products.length > 0'>
+    <thead class='p-product-head'>
+        <tr class="p-product-row">
+        <th style="width: 151px;"><button (click)='toggleImage()'>{{showImage ? 'Hide ':'Show '}}Image </button></th>
+        <th>Product</th>
+        <th>Code</th>
+        <th>Available</th> 
+        <th>Price</th>
+        <th>4 star Rating</th>
+        </tr>
+    </thead>
+
+   <tbody>
+     <tr *ngFor='let pro of filterProducts' >
+       <td >
+         <img *ngIf='showImage' [src]="pro.img" [title]='pro.productName' [style.width.px]="width" >
+       </td>
+       <td><a [routerLink]="['/product',pro.productCode]"> {{ pro.productName }}</a></td>
+       <td>{{pro.productCode| con:'()'}}</td>
+       <td>{{pro.available}}</td> 
+       <td>{{pro.price | currency:'USD':'symbol':'2.2-4' }}</td>
+       <td><star-tag [rating] = 'pro.rating' (ratingEvent)='ratingClicked($event)'></star-tag> </td>
+       </tr>
+
+   </tbody>
+</table>
+
+</div>

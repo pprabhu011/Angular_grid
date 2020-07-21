@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+.p-product-head{
+  border:1px solid black;
+  border-right: 1px solid black;
+}
+th{
+    border: 1px solid black;
+}
